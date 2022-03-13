@@ -18,50 +18,5 @@ Chennai records the highest  no. of accidents. Third Eye campaign in Chennai has
 Bengaluru has also put <b>5000</b> surveillance cameras on the road.
 
 
-## Technologies Used
-
-* **TensorFlow**
-* **Keras**
-* **OpenCv**
-* **pickle**
-* **twilio**
-* **scikitlearn**
-* **matplotlib**
-
-
-### Demo
-* Video Demo is availabe [here](https://drive.google.com/file/d/19Rb5UcmBkM2XKab2V27iBjIcmnjz_pZ7) 
-* Pictures <br>
-![](https://github.com/hackabit19/DevSena/blob/master/a1.jpeg)|
-![](https://github.com/hackabit19/DevSena/blob/master/a2.jpeg)<br>
-
-
-
-
-### Requirements
-For Lite Version of the Model
-* Android 5.0 and higher
-[Get the app here](https://drive.google.com/open?id=1iX9ZJTzbCB1mx9bGShA4z5vFhw3FFkzT)
-
-
-## WorkFlow
-* We have designed a Deep Learning Neural Network which will feed on real time video captured through cctv cameras installed at accidents prone part of the city. The algorithm was trained on accident images from kaggle 
-* The first step after obtaining images was to pre process the image into a vector containing RGB values. The values obtained were normalized to avoid biases among features
-* The model uses  RESnet as a deep learning neural network to obtain a higher accuracy in predicting the possibility of an accident. In this step the image is convoluted, spooled and fed into layers of neural network.
-* The model then predicts probability of accident for each frame of video and if the value reaches the threshold it sends a text message to the nearest police station, hospital.
-
-
-
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-Please make sure to update tests as appropriate.
-
-## The Team
-* [Abhinav Jha](https://github.com/aBITnav)
-* [Nizdain Ahmed](https://github.com/nizd)
-* [Shubham Jha](https://github.com/shubhamjha15)
-* [Sanket Agarwal](https://github.com/xterm-hackslash)
-
 
 
