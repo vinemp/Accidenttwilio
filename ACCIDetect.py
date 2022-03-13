@@ -7,7 +7,7 @@ import pickle
 import cv2
 from twilio.rest import Client
 camid = 101   
-location = 'Hackabit BIT MESHRA,Ranchi, Jharkhand ,India' 
+location = 'Airoli,Thane,Maharashtra,India' 
 
 ap = argparse.ArgumentParser()
 ap.add_argument("-m", "--model", required=True,
@@ -35,7 +35,7 @@ writer = None
 time.sleep(2.0)
 #-------------------
 (W, H) = (None, None)
-client = Client("AC358d6a22cb7b8966c3267905a939c03b", "2f9227d6e04fd21e44d85772c5412511") 
+client = Client("AC5c4fec19446f557b7c71f1f50ea3138f", "0f8248d59e7195cbc0b04ccfc3786af4") 
 prelabel = ''
 prelabel = ''
 ok = 'Normal'
@@ -87,8 +87,8 @@ while True:
 		text = "Alert : {} - {:.2f}%".format((label), maxprob * 100)
 		cv2.putText(output, text, (35, 50), cv2.FONT_HERSHEY_SIMPLEX, 1.25, (0, 255, 0), 5) 
 		if label != prelabel: 
-			client.messages.create(to="+917975720047", 
-                       from_="+12054967936", 
+			client.messages.create(to="+919969658139", 
+                       from_="+17403131737", 
                        body='\n'+ str(text) +'\n Satellite: ' + str(camid) + '\n Orbit: ' + location)
 		prelabel = label
 
